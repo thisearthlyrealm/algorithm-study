@@ -21,6 +21,7 @@
 | Python | 主力：数据处理、模型训练、算法实现 |
 | SQL | 数据查询与特征工程 |
 | C++ | 算法基础、刷题 |
+| Java | 后端开发、大数据 |
 | LaTeX | 论文与报告排版 |
 
 ---
@@ -128,7 +129,7 @@
 
 | 工具 | 用途 |
 |------|------|
-| Clion、Pycharm,Datagrip | 主力 IDE |
+| Clion,Pycharm,Datagrip | 主力 IDE |
 | Jupyter Notebook | 探索性分析与实验 |
 | GitKraken / GitHub | 版本控制与协作 |
 | Anaconda / conda | 环境管理 |
