@@ -128,9 +128,9 @@
 
 | 工具 | 用途 |
 |------|------|
-| VS Code | 主力 IDE |
+| Clion、Pycharm,Datagrip | 主力 IDE |
 | Jupyter Notebook | 探索性分析与实验 |
-| Git / GitHub | 版本控制与协作 |
+| GitKraken / GitHub | 版本控制与协作 |
 | Anaconda / conda | 环境管理 |
 | Docker | 模型部署与容器化 |
 | Linux / WSL | 开发与服务器环境 |
