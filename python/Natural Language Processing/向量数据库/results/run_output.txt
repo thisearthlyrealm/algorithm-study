@@ -1,0 +1,299 @@
+{
+  "document_count": 11,
+  "chunk_count": 12,
+  "embedding_model": "tfidf_svd_local_fallback",
+  "vector_dimension": 11,
+  "vector_db_backend": "numpy_matrix_index",
+  "search_results": [
+    {
+      "question": "如何查询汽车零部件库存和订单状态？",
+      "top_k": [
+        {
+          "metric": "cosine",
+          "score": 0.8267,
+          "text": "订单系统需要记录客户名称、车型、零部件编码、交付时间和订单状态。",
+          "metadata": {
+            "source": "supply_chain.csv",
+            "section": "供应链记录-订单管理",
+            "chunk_id": 0,
+            "strategy": "paragraph_sentence"
+          }
+        },
+        {
+          "metric": "cosine",
+          "score": 0.5194,
+          "text": "华中智造科技有限公司是一家面向汽车零部件产业链的数字化服务企业,主营业务包括零部件识别、供应链协同、仓储调度和质量追溯。",
+          "metadata": {
+            "source": "company_profile.md",
+            "section": "公司概况",
+            "chunk_id": 0,
+            "strategy": "paragraph_sentence"
+          }
+        },
+        {
+          "metric": "cosine",
+          "score": 0.3262,
+          "text": "客户咨询通常涉及零部件适配、库存状态、订单进度和售后保障。",
+          "metadata": {
+            "source": "supply_chain.csv",
+            "section": "供应链记录-客户服务",
+            "chunk_id": 0,
+            "strategy": "paragraph_sentence"
+          }
+        }
+      ]
+    },
+    {
+      "question": "Embedding模型和向量数据库有什么作用？",
+      "top_k": [
+        {
+          "metric": "cosine",
+          "score": 0.9175,
+          "text": "Embedding 模型可以将文本转换为高维向量,使语义相近的文本在向量空间中距离更近。FAISS、Chroma、Milvus 和 Qdrant 都可用于向量检索。FAISS 适合本地实验,支持余弦相似度和欧氏距离等检索方式。",
+          "metadata": {
+            "source": "tech_notes.html",
+            "section": "向量数据库技术说明",
+            "chunk_id": 0,
+            "strategy": "paragraph_sentence"
+          }
+        },
+        {
+          "metric": "cosine",
+          "score": 0.5251,
+          "text": "企业级知识库需要完成多源数据清洗、文本切片、向量化表示、向量数据库入库和相似性检索。通过向量检索,员工可以输入自然语言问题并获得相关业务文档片段。",
+          "metadata": {
+            "source": "company_profile.md",
+            "section": "知识库建设目标",
+            "chunk_id": 0,
+            "strategy": "paragraph_sentence"
+          }
+        },
+        {
+          "metric": "cosine",
+          "score": 0.0904,
+          "text": "文本切片会影响检索效果。切片过短可能丢失上下文,切片过长会导致主题混杂。常见策略包括按段落切片、按语义边界切片和固定长度滑动窗口。相似性检索通常返回 Top-K 结果,并结合元数据展示来源、章节、切片序号和相似度分数。",
+          "metadata": {
+            "source": "tech_notes.html",
+            "section": "向量数据库技术说明",
+            "chunk_id": 1,
+            "strategy": "paragraph_sentence"
+          }
+        }
+      ]
+    },
+    {
+      "question": "供应链金融如何评估融资风险？",
+      "top_k": [
+        {
+          "metric": "cosine",
+          "score": 0.9983,
+          "text": "供应链金融需要根据交易记录、履约情况和信用评分评估融资风险。",
+          "metadata": {
+            "source": "supply_chain.csv",
+            "section": "供应链记录-金融服务",
+            "chunk_id": 0,
+            "strategy": "paragraph_sentence"
+          }
+        },
+        {
+          "metric": "cosine",
+          "score": 0.0733,
+          "text": "华中智造科技有限公司是一家面向汽车零部件产业链的数字化服务企业,主营业务包括零部件识别、供应链协同、仓储调度和质量追溯。",
+          "metadata": {
+            "source": "company_profile.md",
+            "section": "公司概况",
+            "chunk_id": 0,
+            "strategy": "paragraph_sentence"
+          }
+        },
+        {
+          "metric": "cosine",
+          "score": 0.0303,
+          "text": "质量追溯模块需要关联供应商、生产批次、质检结果和异常原因。",
+          "metadata": {
+            "source": "supply_chain.csv",
+            "section": "供应链记录-质量追溯",
+            "chunk_id": 0,
+            "strategy": "paragraph_sentence"
+          }
+        }
+      ]
+    }
+  ],
+  "metric_compare": {
+    "question": "文本切片会怎样影响向量检索效果？",
+    "cosine": [
+      {
+        "metric": "cosine",
+        "score": 0.8437,
+        "text": "企业级知识库需要完成多源数据清洗、文本切片、向量化表示、向量数据库入库和相似性检索。通过向量检索,员工可以输入自然语言问题并获得相关业务文档片段。",
+        "metadata": {
+          "source": "company_profile.md",
+          "section": "知识库建设目标",
+          "chunk_id": 0,
+          "strategy": "paragraph_sentence"
+        }
+      },
+      {
+        "metric": "cosine",
+        "score": 0.8386,
+        "text": "文本切片会影响检索效果。切片过短可能丢失上下文,切片过长会导致主题混杂。常见策略包括按段落切片、按语义边界切片和固定长度滑动窗口。相似性检索通常返回 Top-K 结果,并结合元数据展示来源、章节、切片序号和相似度分数。",
+        "metadata": {
+          "source": "tech_notes.html",
+          "section": "向量数据库技术说明",
+          "chunk_id": 1,
+          "strategy": "paragraph_sentence"
+        }
+      },
+      {
+        "metric": "cosine",
+        "score": 0.3162,
+        "text": "知识库需要保留来源文件名、章节标题、切片序号等元数据,便于结果追溯。对于无效文本、重复文本和乱码内容,应在入库前清洗,避免影响检索质量。",
+        "metadata": {
+          "source": "company_profile.md",
+          "section": "风险控制",
+          "chunk_id": 0,
+          "strategy": "paragraph_sentence"
+        }
+      }
+    ],
+    "euclidean": [
+      {
+        "metric": "euclidean",
+        "score": 0.5367,
+        "text": "文本切片会影响检索效果。切片过短可能丢失上下文,切片过长会导致主题混杂。常见策略包括按段落切片、按语义边界切片和固定长度滑动窗口。相似性检索通常返回 Top-K 结果,并结合元数据展示来源、章节、切片序号和相似度分数。",
+        "metadata": {
+          "source": "tech_notes.html",
+          "section": "向量数据库技术说明",
+          "chunk_id": 1,
+          "strategy": "paragraph_sentence"
+        }
+      },
+      {
+        "metric": "euclidean",
+        "score": 0.6927,
+        "text": "企业级知识库需要完成多源数据清洗、文本切片、向量化表示、向量数据库入库和相似性检索。通过向量检索,员工可以输入自然语言问题并获得相关业务文档片段。",
+        "metadata": {
+          "source": "company_profile.md",
+          "section": "知识库建设目标",
+          "chunk_id": 0,
+          "strategy": "paragraph_sentence"
+        }
+      },
+      {
+        "metric": "euclidean",
+        "score": 0.8698,
+        "text": "知识库需要保留来源文件名、章节标题、切片序号等元数据,便于结果追溯。对于无效文本、重复文本和乱码内容,应在入库前清洗,避免影响检索质量。",
+        "metadata": {
+          "source": "company_profile.md",
+          "section": "风险控制",
+          "chunk_id": 0,
+          "strategy": "paragraph_sentence"
+        }
+      }
+    ]
+  },
+  "entities": [
+    {
+      "entity": "订单系统",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "仓储部门",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "质量追溯模块",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "供应链金融",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "物流模块",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "客户咨询",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "Embedding 模型",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "FAISS",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "Chroma",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "Milvus",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "Qdrant",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "企业级知识库",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "向量数据库",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "元数据",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "汽车零部件",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "华中智造科技有限公司",
+      "type": "业务/技术实体"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "订单系统",
+      "predicate": "记录",
+      "object": "客户名称/车型/零部件编码"
+    },
+    {
+      "subject": "仓储部门",
+      "predicate": "关注",
+      "object": "库存数量/库位编码"
+    },
+    {
+      "subject": "质量追溯模块",
+      "predicate": "关联",
+      "object": "供应商/生产批次/质检结果"
+    },
+    {
+      "subject": "供应链金融",
+      "predicate": "评估",
+      "object": "融资风险"
+    },
+    {
+      "subject": "Embedding 模型",
+      "predicate": "转换",
+      "object": "高维向量"
+    },
+    {
+      "subject": "FAISS",
+      "predicate": "支持",
+      "object": "本地向量检索"
+    },
+    {
+      "subject": "企业级知识库",
+      "predicate": "保留",
+      "object": "来源与切片元数据"
+    }
+  ]
+}

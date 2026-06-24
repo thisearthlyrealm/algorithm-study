@@ -1,0 +1,2 @@
+/mnt/data/vector_db_assignment/src/vector_kb_experiment.py:262: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()

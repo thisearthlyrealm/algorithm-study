@@ -1,0 +1,299 @@
+{
+  "document_count": 11,
+  "chunk_count": 13,
+  "embedding_model": "BAAI/bge-small-zh-v1.5",
+  "vector_dimension": 512,
+  "vector_db_backend": "numpy_matrix_index",
+  "search_results": [
+    {
+      "question": "如何查询汽车零部件库存和订单状态？",
+      "top_k": [
+        {
+          "metric": "cosine",
+          "score": 0.7064,
+          "text": "订单系统需要记录客户名称、车型、零部件编码、交付时间和订单状态。",
+          "metadata": {
+            "source": "supply_chain.csv",
+            "section": "供应链记录-订单管理",
+            "chunk_id": 0,
+            "strategy": "overlap"
+          }
+        },
+        {
+          "metric": "cosine",
+          "score": 0.6865,
+          "text": "客户咨询通常涉及零部件适配、库存状态、订单进度和售后保障。",
+          "metadata": {
+            "source": "supply_chain.csv",
+            "section": "供应链记录-客户服务",
+            "chunk_id": 0,
+            "strategy": "overlap"
+          }
+        },
+        {
+          "metric": "cosine",
+          "score": 0.5543,
+          "text": "企业每天会产生大量订单、入库单、质检记录和客户咨询文本。传统关键词检索难以理解用户问题中的语义关系,例如“刹车片库存风险”和“制动系统备件缺货”在业务上高度相关。",
+          "metadata": {
+            "source": "company_profile.md",
+            "section": "业务场景",
+            "chunk_id": 0,
+            "strategy": "overlap"
+          }
+        }
+      ]
+    },
+    {
+      "question": "Embedding模型和向量数据库有什么作用？",
+      "top_k": [
+        {
+          "metric": "cosine",
+          "score": 0.7037,
+          "text": "Embedding 模型可以将文本转换为高维向量,使语义相近的文本在向量空间中距离更近。\nFAISS、Chroma、Milvus 和 Qdrant 都可用于向量检索。FAISS 适合本地实验,支持余弦相似度和欧氏距离等检索方式。\n文本切片会",
+          "metadata": {
+            "source": "tech_notes.html",
+            "section": "向量数据库技术说明",
+            "chunk_id": 0,
+            "strategy": "overlap"
+          }
+        },
+        {
+          "metric": "cosine",
+          "score": 0.561,
+          "text": "企业级知识库需要完成多源数据清洗、文本切片、向量化表示、向量数据库入库和相似性检索。通过向量检索,员工可以输入自然语言问题并获得相关业务文档片段。",
+          "metadata": {
+            "source": "company_profile.md",
+            "section": "知识库建设目标",
+            "chunk_id": 0,
+            "strategy": "overlap"
+          }
+        },
+        {
+          "metric": "cosine",
+          "score": 0.4836,
+          "text": " Top-K 结果,并结合元数据展示来源、章节、切片序号和相似度分数。",
+          "metadata": {
+            "source": "tech_notes.html",
+            "section": "向量数据库技术说明",
+            "chunk_id": 2,
+            "strategy": "overlap"
+          }
+        }
+      ]
+    },
+    {
+      "question": "供应链金融如何评估融资风险？",
+      "top_k": [
+        {
+          "metric": "cosine",
+          "score": 0.8502,
+          "text": "供应链金融需要根据交易记录、履约情况和信用评分评估融资风险。",
+          "metadata": {
+            "source": "supply_chain.csv",
+            "section": "供应链记录-金融服务",
+            "chunk_id": 0,
+            "strategy": "overlap"
+          }
+        },
+        {
+          "metric": "cosine",
+          "score": 0.4989,
+          "text": "客户咨询通常涉及零部件适配、库存状态、订单进度和售后保障。",
+          "metadata": {
+            "source": "supply_chain.csv",
+            "section": "供应链记录-客户服务",
+            "chunk_id": 0,
+            "strategy": "overlap"
+          }
+        },
+        {
+          "metric": "cosine",
+          "score": 0.4971,
+          "text": "仓储部门关注库存数量、入库时间、出库时间、库位编码和安全库存阈值。",
+          "metadata": {
+            "source": "supply_chain.csv",
+            "section": "供应链记录-仓储管理",
+            "chunk_id": 0,
+            "strategy": "overlap"
+          }
+        }
+      ]
+    }
+  ],
+  "metric_compare": {
+    "question": "文本切片会怎样影响向量检索效果？",
+    "cosine": [
+      {
+        "metric": "cosine",
+        "score": 0.6515,
+        "text": ",支持余弦相似度和欧氏距离等检索方式。\n文本切片会影响检索效果。切片过短可能丢失上下文,切片过长会导致主题混杂。常见策略包括按段落切片、按语义边界切片和固定长度滑动窗口。\n相似性检索通常返回 Top-K 结果,并结合元数据展示来源、章节、切",
+        "metadata": {
+          "source": "tech_notes.html",
+          "section": "向量数据库技术说明",
+          "chunk_id": 1,
+          "strategy": "overlap"
+        }
+      },
+      {
+        "metric": "cosine",
+        "score": 0.5977,
+        "text": "Embedding 模型可以将文本转换为高维向量,使语义相近的文本在向量空间中距离更近。\nFAISS、Chroma、Milvus 和 Qdrant 都可用于向量检索。FAISS 适合本地实验,支持余弦相似度和欧氏距离等检索方式。\n文本切片会",
+        "metadata": {
+          "source": "tech_notes.html",
+          "section": "向量数据库技术说明",
+          "chunk_id": 0,
+          "strategy": "overlap"
+        }
+      },
+      {
+        "metric": "cosine",
+        "score": 0.5651,
+        "text": "企业级知识库需要完成多源数据清洗、文本切片、向量化表示、向量数据库入库和相似性检索。通过向量检索,员工可以输入自然语言问题并获得相关业务文档片段。",
+        "metadata": {
+          "source": "company_profile.md",
+          "section": "知识库建设目标",
+          "chunk_id": 0,
+          "strategy": "overlap"
+        }
+      }
+    ],
+    "euclidean": [
+      {
+        "metric": "euclidean",
+        "score": 0.8348,
+        "text": ",支持余弦相似度和欧氏距离等检索方式。\n文本切片会影响检索效果。切片过短可能丢失上下文,切片过长会导致主题混杂。常见策略包括按段落切片、按语义边界切片和固定长度滑动窗口。\n相似性检索通常返回 Top-K 结果,并结合元数据展示来源、章节、切",
+        "metadata": {
+          "source": "tech_notes.html",
+          "section": "向量数据库技术说明",
+          "chunk_id": 1,
+          "strategy": "overlap"
+        }
+      },
+      {
+        "metric": "euclidean",
+        "score": 0.897,
+        "text": "Embedding 模型可以将文本转换为高维向量,使语义相近的文本在向量空间中距离更近。\nFAISS、Chroma、Milvus 和 Qdrant 都可用于向量检索。FAISS 适合本地实验,支持余弦相似度和欧氏距离等检索方式。\n文本切片会",
+        "metadata": {
+          "source": "tech_notes.html",
+          "section": "向量数据库技术说明",
+          "chunk_id": 0,
+          "strategy": "overlap"
+        }
+      },
+      {
+        "metric": "euclidean",
+        "score": 0.9326,
+        "text": "企业级知识库需要完成多源数据清洗、文本切片、向量化表示、向量数据库入库和相似性检索。通过向量检索,员工可以输入自然语言问题并获得相关业务文档片段。",
+        "metadata": {
+          "source": "company_profile.md",
+          "section": "知识库建设目标",
+          "chunk_id": 0,
+          "strategy": "overlap"
+        }
+      }
+    ]
+  },
+  "entities": [
+    {
+      "entity": "订单系统",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "仓储部门",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "质量追溯模块",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "供应链金融",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "物流模块",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "客户咨询",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "Embedding 模型",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "FAISS",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "Chroma",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "Milvus",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "Qdrant",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "企业级知识库",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "向量数据库",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "元数据",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "汽车零部件",
+      "type": "业务/技术实体"
+    },
+    {
+      "entity": "华中智造科技有限公司",
+      "type": "业务/技术实体"
+    }
+  ],
+  "relations": [
+    {
+      "subject": "订单系统",
+      "predicate": "记录",
+      "object": "客户名称/车型/零部件编码"
+    },
+    {
+      "subject": "仓储部门",
+      "predicate": "关注",
+      "object": "库存数量/库位编码"
+    },
+    {
+      "subject": "质量追溯模块",
+      "predicate": "关联",
+      "object": "供应商/生产批次/质检结果"
+    },
+    {
+      "subject": "供应链金融",
+      "predicate": "评估",
+      "object": "融资风险"
+    },
+    {
+      "subject": "Embedding 模型",
+      "predicate": "转换",
+      "object": "高维向量"
+    },
+    {
+      "subject": "FAISS",
+      "predicate": "支持",
+      "object": "本地向量检索"
+    },
+    {
+      "subject": "企业级知识库",
+      "predicate": "保留",
+      "object": "来源与切片元数据"
+    }
+  ]
+}
