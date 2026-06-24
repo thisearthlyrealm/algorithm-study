@@ -20,7 +20,7 @@
 |------|------|
 | Python | 数据处理、模型训练、算法实现 |
 | SQL | 数据查询与特征工程 |
-| C++ | 算法基础、刷题 |
+| C++ | 算法基础、刷题、桌面应用、高性能服务 |
 | Java | 后端开发、大数据 |
 | LaTeX | 论文与报告排版 |
 
@@ -135,6 +135,61 @@
 | Anaconda / conda | 环境管理 |
 | Docker | 模型部署与容器化 |
 | Linux / WSL | 开发与服务器环境 |
+
+---
+
+### ⚡ C++ 软件开发
+
+**现代 C++ 特性**
+- C++11/14/17/20：智能指针、Lambda 表达式、移动语义、完美转发、可变参数模板、constexpr
+- RAII 与资源管理 · 异常安全编程
+
+**标准库与生态**
+- STL 容器与算法 · 迭代器适配器 · 函数对象
+- 多线程编程（std::thread、std::async、线程池）
+- 网络编程（Boost.Asio / 原生 Socket）
+- 序列化（Protobuf、JSON、YAML）
+
+**设计模式与架构**
+- 单例 · 工厂 · 策略 · 观察者 · 职责链等常见设计模式
+- 面向对象设计（SOLID 原则）
+- 模块化与接口设计 · Pimpl 惯用法
+
+**桌面应用开发**
+- Qt6 / QML 跨平台 GUI 开发
+  - 信号槽机制 · 模型/视图框架 · 自定义控件
+  - 事件循环与异步处理 · 多线程 GUI 编程
+  - 跨平台：一套代码运行 Windows / Linux / macOS
+- MFC（Microsoft Foundation Classes）— Windows 原生 GUI
+  - 文档/视图架构 · 消息映射机制
+  - 深度集成 Win32 API，适合维护老旧 Windows 应用
+
+**高性能与底层**
+- 内存布局优化（缓存友好、数据对齐、池分配器）
+- 编译期计算（模板元编程、constexpr、consteval）
+- CMake 构建系统 · 跨平台编译（Windows / Linux / macOS）
+
+---
+
+## 🏆 Kaggle 竞赛与项目
+
+**竞赛经历**
+- Titanic - 机器学习入门（二分分类）
+- House Prices - 高级回归与特征工程
+- Spaceship Titanic - 表格数据分类
+- TMDB Box Office Prediction - 多特征回归
+
+**常用 Workflow**
+- EDA（探索性数据分析）：Pandas Profiling · Matplotlib · Seaborn
+- 特征工程：缺失值处理 · 类别编码 · 特征交叉 · 目标编码
+- 模型集成：Stacking · Blending · 加权平均
+- 调参：Optuna · GridSearchCV · 早停策略
+
+**竞赛技巧**
+- 交叉验证策略（Stratified KFold · Group KFold）
+- 特征选择与降维（SHAP · Permutation Importance · PCA）
+- 后处理与伪标签（Pseudo Labeling）
+- 硬件加速（GPU 训练 · 混合精度）
 
 ---
 
