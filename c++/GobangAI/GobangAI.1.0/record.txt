@@ -1,0 +1,53 @@
+Time: Fri Jun 26 15:38:14 2026
+Mode: Human VS Local AI
+Result: Local AI O wins
+Moves: 
+-----------------------------
+Time: Fri Jun 26 15:44:18 2026
+Mode: Human VS Local AI
+Result: Local AI O wins
+Moves: 
+Step 1: Black X -> (7,7)
+Step 2: Local AI O -> (5,5)
+Step 3: Black X -> (6,6)
+Step 4: Local AI O -> (8,8)
+Step 5: Black X -> (7,6)
+Step 6: Local AI O -> (5,6)
+Step 7: Black X -> (7,8)
+Step 8: Local AI O -> (7,5)
+Step 9: Black X -> (7,9)
+Step 10: Local AI O -> (7,10)
+Step 11: Black X -> (6,5)
+Step 12: Local AI O -> (5,4)
+Step 13: Black X -> (5,7)
+Step 14: Local AI O -> (5,3)
+Step 15: Black X -> (5,2)
+Step 16: Local AI O -> (6,4)
+Step 17: Black X -> (8,6)
+Step 18: Local AI O -> (4,2)
+Step 19: Black X -> (3,2)
+Step 20: Local AI O -> (3,1)
+-----------------------------
+Time: Fri Jun 26 15:57:53 2026
+Mode: Human VS Local AI
+Result: Local AI O wins
+Moves: 
+Step 1: Black X -> (7,7)
+Step 2: Local AI O -> (5,5)
+Step 3: Black X -> (1,1)
+Step 4: Local AI O -> (4,4)
+Step 5: Black X -> (2,2)
+Step 6: Local AI O -> (3,3)
+Step 7: Black X -> (9,9)
+Step 8: Local AI O -> (8,8)
+Step 9: Black X -> (10,10)
+Step 10: Local AI O -> (3,4)
+Step 11: Black X -> (11,11)
+Step 12: Local AI O -> (12,12)
+Step 13: Black X -> (1,9)
+Step 14: Local AI O -> (2,4)
+Step 15: Black X -> (9,1)
+Step 16: Local AI O -> (5,4)
+Step 17: Black X -> (2,6)
+Step 18: Local AI O -> (1,4)
+-----------------------------
