@@ -1,0 +1,93 @@
+{
+  "version": "Q3_stage1B_target_descent_v1",
+  "case": "n200",
+  "block_area": 175696,
+  "area_lower_bound_side": 420,
+  "W": 442,
+  "H": 442,
+  "S_star": 442,
+  "dead_space_ratio": 0.11194335670703937,
+  "gap_to_area_lb": 22,
+  "history": [
+    {
+      "step": 5,
+      "target": 444,
+      "success": false,
+      "best_W": 444,
+      "best_H": 445,
+      "overflow": 1.0
+    },
+    {
+      "step": 2,
+      "target": 447,
+      "success": true,
+      "best_W": 447,
+      "best_H": 447,
+      "overflow": 0.0
+    },
+    {
+      "step": 2,
+      "target": 445,
+      "success": false,
+      "best_W": 445,
+      "best_H": 446,
+      "overflow": 1.0
+    },
+    {
+      "step": 1,
+      "target": 446,
+      "success": true,
+      "best_W": 446,
+      "best_H": 446,
+      "overflow": 0.0
+    },
+    {
+      "step": 1,
+      "target": 445,
+      "success": true,
+      "best_W": 445,
+      "best_H": 445,
+      "overflow": 0.0
+    },
+    {
+      "step": 1,
+      "target": 444,
+      "success": true,
+      "best_W": 444,
+      "best_H": 444,
+      "overflow": 0.0
+    },
+    {
+      "step": 1,
+      "target": 443,
+      "success": true,
+      "best_W": 443,
+      "best_H": 442,
+      "overflow": 0.0
+    },
+    {
+      "step": 1,
+      "target": 442,
+      "success": true,
+      "best_W": 442,
+      "best_H": 442,
+      "overflow": 0.0
+    },
+    {
+      "step": 1,
+      "target": 441,
+      "success": false,
+      "best_W": 441,
+      "best_H": 442,
+      "overflow": 1.0
+    },
+    {
+      "step": "verify",
+      "target": 441,
+      "success": false,
+      "best_W": 441,
+      "best_H": 442,
+      "overflow": 1.0
+    }
+  ]
+}

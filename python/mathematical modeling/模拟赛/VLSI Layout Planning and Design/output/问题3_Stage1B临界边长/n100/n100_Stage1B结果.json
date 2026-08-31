@@ -1,0 +1,93 @@
+{
+  "version": "Q3_stage1B_target_descent_v1",
+  "case": "n100",
+  "block_area": 179501,
+  "area_lower_bound_side": 424,
+  "W": 435,
+  "H": 435,
+  "S_star": 435,
+  "dead_space_ratio": 0.05417240015375957,
+  "gap_to_area_lb": 11,
+  "history": [
+    {
+      "step": 5,
+      "target": 444,
+      "success": true,
+      "best_W": 442,
+      "best_H": 443,
+      "overflow": 0.0
+    },
+    {
+      "step": 5,
+      "target": 438,
+      "success": false,
+      "best_W": 440,
+      "best_H": 438,
+      "overflow": 2.0
+    },
+    {
+      "step": 2,
+      "target": 441,
+      "success": true,
+      "best_W": 439,
+      "best_H": 441,
+      "overflow": 0.0
+    },
+    {
+      "step": 2,
+      "target": 439,
+      "success": true,
+      "best_W": 439,
+      "best_H": 439,
+      "overflow": 0.0
+    },
+    {
+      "step": 2,
+      "target": 437,
+      "success": true,
+      "best_W": 437,
+      "best_H": 437,
+      "overflow": 0.0
+    },
+    {
+      "step": 2,
+      "target": 435,
+      "success": false,
+      "best_W": 435,
+      "best_H": 436,
+      "overflow": 1.0
+    },
+    {
+      "step": 1,
+      "target": 436,
+      "success": true,
+      "best_W": 436,
+      "best_H": 436,
+      "overflow": 0.0
+    },
+    {
+      "step": 1,
+      "target": 435,
+      "success": true,
+      "best_W": 435,
+      "best_H": 435,
+      "overflow": 0.0
+    },
+    {
+      "step": 1,
+      "target": 434,
+      "success": false,
+      "best_W": 435,
+      "best_H": 435,
+      "overflow": 2
+    },
+    {
+      "step": "verify",
+      "target": 434,
+      "success": false,
+      "best_W": 434,
+      "best_H": 435,
+      "overflow": 1.0
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "version": "Q3_stage2_hpwl_v1",
+  "case": "n200",
+  "seed": 2027,
+  "L": 442.0,
+  "dead_space_ratio": 0.11194335670703937,
+  "initial_hpwl": 570107.5,
+  "global_hpwl": 468359.0,
+  "final_hpwl": 436933.5,
+  "final_width": 442,
+  "final_height": 442,
+  "global_improvement": 0.17847248106716715,
+  "polish_improvement": 0.06709703453974408,
+  "total_improvement": 0.2335945413803537,
+  "overlap_count": 0,
+  "out_count": 0
+}

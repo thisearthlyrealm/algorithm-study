@@ -1,0 +1,19 @@
+{
+  "version": "Q2_parallel_v1",
+  "case": "n300",
+  "seed": 1107,
+  "L": 560.4868419508169,
+  "initial_hpwl": 864135.0,
+  "global_hpwl": 706854.0,
+  "final_hpwl": 646534.0,
+  "final_width": 560,
+  "final_height": 559,
+  "global_improvement": 0.18200975542016004,
+  "polish_improvement": 0.08533586851032887,
+  "total_improvement": 0.251813663374357,
+  "overlap_count": 0,
+  "out_count": 0,
+  "layout_path": "D:\\monisai\\3A\\output\\问题2_三数据集并行\\n300\\seed_results\\n300_seed1107_最终布局.png",
+  "coord_path": "D:\\monisai\\3A\\output\\问题2_三数据集并行\\n300\\seed_results\\n300_seed1107_最终坐标.csv",
+  "convergence_path": "D:\\monisai\\3A\\output\\问题2_三数据集并行\\n300\\seed_results\\n300_seed1107_收敛曲线.png"
+}

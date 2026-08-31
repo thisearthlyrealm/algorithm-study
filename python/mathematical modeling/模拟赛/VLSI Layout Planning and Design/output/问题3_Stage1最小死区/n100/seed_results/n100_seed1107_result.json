@@ -1,0 +1,18 @@
+{
+  "version": "Q3_stage1_square_v1",
+  "case": "n100",
+  "seed": 1107,
+  "block_area": 179501,
+  "start_W": 435,
+  "start_H": 449,
+  "start_S": 449,
+  "global_W": 435,
+  "global_H": 449,
+  "global_S": 449,
+  "W": 435,
+  "H": 449,
+  "S": 449,
+  "dead_space_ratio": 0.12311909125854448,
+  "area_lower_bound_side": 424,
+  "gap_to_area_lb": 25
+}

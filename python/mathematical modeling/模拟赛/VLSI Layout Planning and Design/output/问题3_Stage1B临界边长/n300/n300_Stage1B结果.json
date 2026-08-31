@@ -1,0 +1,85 @@
+{
+  "version": "Q3_stage1B_target_descent_v1",
+  "case": "n300",
+  "block_area": 273170,
+  "area_lower_bound_side": 523,
+  "W": 549,
+  "H": 549,
+  "S_star": 549,
+  "dead_space_ratio": 0.10334590181937986,
+  "gap_to_area_lb": 26,
+  "history": [
+    {
+      "step": 5,
+      "target": 555,
+      "success": true,
+      "best_W": 555,
+      "best_H": 555,
+      "overflow": 0.0
+    },
+    {
+      "step": 5,
+      "target": 550,
+      "success": false,
+      "best_W": 550,
+      "best_H": 553,
+      "overflow": 3.0
+    },
+    {
+      "step": 2,
+      "target": 553,
+      "success": true,
+      "best_W": 553,
+      "best_H": 552,
+      "overflow": 0.0
+    },
+    {
+      "step": 2,
+      "target": 551,
+      "success": true,
+      "best_W": 551,
+      "best_H": 551,
+      "overflow": 0.0
+    },
+    {
+      "step": 2,
+      "target": 549,
+      "success": false,
+      "best_W": 550,
+      "best_H": 550,
+      "overflow": 2
+    },
+    {
+      "step": 1,
+      "target": 550,
+      "success": true,
+      "best_W": 550,
+      "best_H": 550,
+      "overflow": 0.0
+    },
+    {
+      "step": 1,
+      "target": 549,
+      "success": true,
+      "best_W": 549,
+      "best_H": 549,
+      "overflow": 0.0
+    },
+    {
+      "step": 1,
+      "target": 548,
+      "success": false,
+      "best_W": 548,
+      "best_H": 549,
+      "overflow": 1.0
+    },
+    {
+      "step": "verify",
+      "target": 548,
+      "success": false,
+      "best_W": 548,
+      "best_H": 549,
+      "overflow": 1.0
+    }
+  ]
+}
